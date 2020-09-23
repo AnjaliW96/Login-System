@@ -6,7 +6,6 @@ class user
     private $name;
     private $email;
     private $gender;
-    private $username;
     private $password;
 
     public function setName($name){
@@ -31,14 +30,6 @@ class user
     public function getGender()
     {
         return $this->gender;
-    }
-    public function setUsername($username): void
-    {
-        $this->username = $username;
-    }
-    public function getUsername()
-    {
-        return $this->username;
     }
     public function setPassword($password): void
     {

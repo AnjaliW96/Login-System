@@ -1,13 +1,7 @@
 <?php
     //create connection to Mongo DB
-    $connection = new MongoClient();
-    echo "Successfully connected!";
+	$connection = new MongoDB\Driver\Manager("mongodb://localhost:27017");
 
-    //select the database
-    $dataBase = $connection -> login_system;
-    echo "Successfully selected login_system database";
-
-    //create 'user' collection
-    $collection = $dataBase -> createCollection("user");
-    echo "Successfully created user collection";
+	// select the database
+	$databaseName = "login_system.user";
 ?>
