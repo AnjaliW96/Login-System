@@ -1,6 +1,6 @@
 <?php
 	session_start();
-	include('db_connection.php');
+	include('Common/db_connection.php');
 	include ('user.php');
 
 	$email = $_POST["email"];
@@ -20,7 +20,7 @@
 			$userGender = $arrayUser[0]->gender;		//get gender from the array
 			$userPassword = $arrayUser[0]->password;	//get password from the array
 			if(!(password_verify($password, $userPassword))){			// check whether the entered password is correct
-				echo "<script>window.location.href='login.php'; alert('Login Failed!  You have entered a wrong password. Please Try Again!');</script>";	//display login failed message due to incorrect password
+				echo "<script>window.location.href='login.php'; alert('Login failed!  You have entered a wrong password. Please try again!');</script>";	//display login failed message due to incorrect password
 			}else{
 				$_SESSION['name'] = $userName;			//create session variable for logged in user name
 				$_SESSION['email'] = $userEmail;		//create session variable for logged in user email
@@ -28,10 +28,10 @@
 				echo "<script>window.location.href='dashboard.php';alert('You have logged-in successfully!');</script>";
 			}
 		}else{
-			echo "<script>window.location.href='login.php'; alert('Login Failed! Incorrect email. Please Try Again!');</script>";	//display login failed message due to incorrect email
+			echo "<script>window.location.href='login.php'; alert('Login failed! Incorrect email. Please try again!');</script>";	//display login failed message due to incorrect email
 		}	
 	}catch(MongoDB\Driver\Exception\Exception $ex){
-		die("Error Occurred while Login!");
+		die("Error occurred while login!");
 	}
 ?>
 

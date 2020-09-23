@@ -3,7 +3,7 @@
     $pageName = "Sign Up";
     echo '<title>'.$pageName.'</title>
           <body>';
-    include ("header.php");
+    include("Common/header.php");
     echo '<br><br><div class="container">
               <div class="row">
                 <div class="col-lg-2"></div>
@@ -15,7 +15,7 @@
                         <!-- Email -->
                         <input type="text"class="form-control mb-4" placeholder="Enter E-mail" name="email" required>
                         <!-- Gender-->
-                        <p style="text-align: left";>Select Gender: </p>
+                        <p style="text-align: left">Select Gender: </p>
                         <div class="custom-control custom-radio custom-control-inline">
                           <input type="radio" class="custom-control-input" id="male" value="male" name="gender" required>
                           <label class="custom-control-label" for="male">Male</label>
@@ -40,6 +40,6 @@
                 <div class="col-lg-2"></div>
               </div>
             </div>';
-        include ('footer.php');
+        include('Common/footer.php');
         echo'</body>';
 ?>

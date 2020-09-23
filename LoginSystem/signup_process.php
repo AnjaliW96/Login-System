@@ -1,6 +1,6 @@
 <?php
     session_start();
-	include 'db_connection.php';
+	include 'Common/db_connection.php';
 	include ('user.php');
     $insert = new MongoDB\Driver\BulkWrite;
 
@@ -12,7 +12,7 @@
 	
 
         if(!($password==$confirmPw)){	//check confirmed password are correct
-			echo "<script>window.location.href='signup.php';alert('Sign-Up Failed! The passwords are not matching. Please Try Again!');</script>";	//display signup failed message due to incorrect confirm password
+			echo "<script>window.location.href='signup.php';alert('Sign-up failed! The passwords are not matching. Please try again!');</script>";	//display signup failed message due to incorrect confirm password
         }
         else{
             if(preg_match("/[-0-9a-zA-Z.+_]+@[-0-9a-zA-Z.+_]+.[a-zA-Z]{2,4}/", $email)){	//checking the email in correct form
@@ -25,7 +25,7 @@
 					$arrayUser = $executeQuery -> toArray();	//get data to an array
 					
 					if (!(empty($arrayUser))){			//check whether the array is empty
-						echo "<script>window.location.href='signup.php';alert('Sign-Up Failed! Your email has already signed-up. Please Try Again!');</script>";	//display signup failed message due to email has already entered
+						echo "<script>window.location.href='signup.php';alert('Sign-up failed! Your email has already signed-up. Please try again!');</script>";	//display signup failed message due to email has already entered
 					}else{
 						$enPassword = password_hash($password,PASSWORD_DEFAULT); 			//encrypt the password before create the object
  						
@@ -47,17 +47,17 @@
 							$executeInsert = $connection -> executeBulkWrite($databaseName,$insert);
 							echo "<script>window.location.href='login.php';alert('You have signed-up successfully!');</script>";		//display signup success message			
 						} catch (MongoDB\Driver\Exception\Exception $ex){
-							die("Error Occurred While signing up!");
+							die("Error occurred While signing up!");
 						} 
 							}	
 				}catch(MongoDB\Driver\Exception\Exception $ex){
-					die("Error Occurred while signing up!");
+					die("Error occurred while signing up!");
 				}
 				
 				             
             }
             else{
-				echo "<script>window.location.href='signup.php';alert('Sign Failed! Incorrect email. Please Try Again!');</script>";	//display signup failed message due to incorrect email   
+				echo "<script>window.location.href='signup.php';alert('Sign-up failed! Incorrect email. Please try again!');</script>";	//display signup failed message due to incorrect email
             }
         }
 ?>

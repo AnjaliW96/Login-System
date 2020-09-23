@@ -3,7 +3,7 @@
 	$pageName = "Dashboard";
     echo "<title>$pageName</title>
           <body>";
-          include ('header.php');
+          include('Common/header.php');
           if (isset($_SESSION['email'])) {	//check whether the session is set
               echo '
                 <br><br><br>
@@ -31,6 +31,6 @@
 		  }else{
               echo "<script>window.location.href='login.php';alert('To access this page you have login first!');</script>";
           }
-    include ('footer.php');
+    include('Common/footer.php');
 	echo"</body>";	
 ?>

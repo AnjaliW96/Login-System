@@ -19,15 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e61a4149-af65-4c85-8eee-a41acaea4ee7" name="Default Changelist" comment="Initial Commit">
-      <change afterPath="$PROJECT_DIR$/login.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/login_process.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/stylesheet.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_connection.php" beforeDir="false" afterPath="$PROJECT_DIR$/db_connection.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/signup.php" beforeDir="false" afterPath="$PROJECT_DIR$/signup.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/signup_process.php" beforeDir="false" afterPath="$PROJECT_DIR$/signup_process.php" afterDir="false" />
-    </list>
+    <list default="true" id="e61a4149-af65-4c85-8eee-a41acaea4ee7" name="Default Changelist" comment="Initial Commit" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -39,7 +31,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="CSS File" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -53,11 +45,16 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="C:/xampp/php/php.exe" />
-    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\LoginSystem\Common" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration name="signup.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/signup.php">
@@ -85,7 +82,10 @@
       <workItem from="1600706787313" duration="5486000" />
       <workItem from="1600714408749" duration="404000" />
       <workItem from="1600714922093" duration="428000" />
-      <workItem from="1600747712875" duration="8020000" />
+      <workItem from="1600747712875" duration="3366000" />
+      <workItem from="1600845317451" duration="13813000" />
+      <workItem from="1600862528848" duration="6039000" />
+      <workItem from="1600887100636" duration="1326000" />
     </task>
     <task id="LOCAL-00001" summary="Initial Commit">
       <created>1600714555405</created>
@@ -133,34 +133,34 @@
       <screen x="0" y="0" width="1475" height="789" />
     </state>
     <state x="192" y="49" width="1089" height="728" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1475.789@0.0.1475.789" timestamp="1600714975327" />
-    <state x="518" y="149" key="FileChooserDialogImpl" timestamp="1600715241383">
+    <state x="518" y="149" key="FileChooserDialogImpl" timestamp="1600864503625">
       <screen x="0" y="0" width="1475" height="789" />
     </state>
-    <state x="518" y="149" key="FileChooserDialogImpl/0.0.1475.789@0.0.1475.789" timestamp="1600715241383" />
-    <state width="1431" height="455" key="GridCell.Tab.0.bottom" timestamp="1600778264510">
+    <state x="518" y="149" key="FileChooserDialogImpl/0.0.1475.789@0.0.1475.789" timestamp="1600864503625" />
+    <state width="1431" height="455" key="GridCell.Tab.0.bottom" timestamp="1600751997759">
       <screen x="0" y="0" width="1475" height="789" />
     </state>
-    <state width="1431" height="455" key="GridCell.Tab.0.bottom/0.0.1475.789@0.0.1475.789" timestamp="1600778264510" />
-    <state width="1431" height="455" key="GridCell.Tab.0.center" timestamp="1600778264510">
+    <state width="1431" height="455" key="GridCell.Tab.0.bottom/0.0.1475.789@0.0.1475.789" timestamp="1600751997759" />
+    <state width="1431" height="455" key="GridCell.Tab.0.center" timestamp="1600751997758">
       <screen x="0" y="0" width="1475" height="789" />
     </state>
-    <state width="1431" height="455" key="GridCell.Tab.0.center/0.0.1475.789@0.0.1475.789" timestamp="1600778264510" />
-    <state width="1431" height="455" key="GridCell.Tab.0.left" timestamp="1600778264510">
+    <state width="1431" height="455" key="GridCell.Tab.0.center/0.0.1475.789@0.0.1475.789" timestamp="1600751997758" />
+    <state width="1431" height="455" key="GridCell.Tab.0.left" timestamp="1600751997758">
       <screen x="0" y="0" width="1475" height="789" />
     </state>
-    <state width="1431" height="455" key="GridCell.Tab.0.left/0.0.1475.789@0.0.1475.789" timestamp="1600778264510" />
-    <state width="1431" height="455" key="GridCell.Tab.0.right" timestamp="1600778264510">
+    <state width="1431" height="455" key="GridCell.Tab.0.left/0.0.1475.789@0.0.1475.789" timestamp="1600751997758" />
+    <state width="1431" height="455" key="GridCell.Tab.0.right" timestamp="1600751997759">
       <screen x="0" y="0" width="1475" height="789" />
     </state>
-    <state width="1431" height="455" key="GridCell.Tab.0.right/0.0.1475.789@0.0.1475.789" timestamp="1600778264510" />
+    <state width="1431" height="455" key="GridCell.Tab.0.right/0.0.1475.789@0.0.1475.789" timestamp="1600751997759" />
     <state x="571" y="117" key="NewPhpClassDialog" timestamp="1600710622341">
       <screen x="0" y="0" width="1475" height="789" />
     </state>
     <state x="571" y="117" key="NewPhpClassDialog/0.0.1475.789@0.0.1475.789" timestamp="1600710622341" />
-    <state x="574" y="318" key="NewPhpFileDialog" timestamp="1600758274267">
+    <state x="574" y="318" key="NewPhpFileDialog" timestamp="1600858025870">
       <screen x="0" y="0" width="1475" height="789" />
     </state>
-    <state x="574" y="318" key="NewPhpFileDialog/0.0.1475.789@0.0.1475.789" timestamp="1600758274267" />
+    <state x="574" y="318" key="NewPhpFileDialog/0.0.1475.789@0.0.1475.789" timestamp="1600858025870" />
     <state x="330" y="127" key="Vcs.Push.Dialog.v2" timestamp="1600714582939">
       <screen x="0" y="0" width="1475" height="789" />
     </state>

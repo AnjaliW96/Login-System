@@ -3,7 +3,7 @@
     $pageName = "Login";
     echo '<title>'.$pageName.'</title>
           <body>';
-    include ("header.php");
+    include("Common/header.php");
         echo '
         <br><br><br><br><br>
         <div class="container">
@@ -13,9 +13,9 @@
                 <form class="text-center border border-light p-5" action="login_process.php" method="POST">
                     <p class="h4 mb-4">'.$pageName.'</p>
                     <!-- Email -->
-                    <input type="email" id="defaultLoginFormEmail" class="form-control mb-4" placeholder="E-mail" name="email">
+                    <input type="email" class="form-control mb-4" placeholder="E-mail" name="email" required>
                     <!-- Password -->
-                    <input type="password" id="defaultLoginFormPassword" class="form-control mb-4" placeholder="Password" name="password">
+                    <input type="password" class="form-control mb-4" placeholder="Password" name="password" required>
                     <!-- Login in button -->
                     <button class="btn btn-info btn-block my-4" type="submit">Login</button>
                     <!-- SignUp -->
@@ -27,6 +27,6 @@
             <div class="col-lg-2"></div>
           </div>
         </div>';
-        include ('footer.php');
+        include('Common/footer.php');
         echo'</body>';
 ?>
